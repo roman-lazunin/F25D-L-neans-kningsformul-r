@@ -1,0 +1,94 @@
+/* variables.css - Color palette and design tokens */
+
+:root {
+  /* Pastel Background Gradients */
+  --bg-gradient-primary: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  --bg-gradient-secondary: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);
+  --bg-gradient-accent: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+
+  /* Primary Colors - Soft Pastels */
+  --color-primary: #6b73ff;
+  --color-primary-light: #9c88ff;
+  --color-primary-dark: #afb5e9;
+  
+  /* Secondary Colors */
+  --color-secondary: #38b2ac;
+  --color-secondary-light: #4fd1c7;
+  --color-secondary-dark: #319795;
+  
+  /* Accent Colors */
+  --color-accent-pink: #ed64a6;
+  --color-accent-coral: #fc8181;
+  --color-accent-mint: #68d391;
+  --color-accent-lavender: #b794f6;
+  --color-accent-peach: #f6ad55;
+  
+  /* Text Colors */
+  --text-primary: #2d3748;
+  --text-secondary: #4a5568;
+  --text-muted: #718096;
+  --text-light: #a0aec0;
+  --text-white: #ffffff;
+  
+  /* Background Colors */
+  --bg-white: #ffffff;
+  --bg-light: #f7fafc;
+  --bg-soft: #edf2f7;
+  --bg-card: rgba(255, 255, 255, 0.95);
+  --bg-overlay: rgba(255, 255, 255, 0.1);
+  
+  /* Border Colors */
+  --border-light: #e2e8f0;
+  --border-medium: #cbd5e0;
+  --border-focus: #b794f6;
+  
+  /* Error States */
+  --color-error: #f56565;
+  --color-error-light: #feb2b2;
+  --color-error-bg: #fed7d7;
+  
+  /* Success States */
+  --color-success: #48bb78;
+  --color-success-light: #9ae6b4;
+  --color-success-bg: #c6f6d5;
+  
+  /* Warning States */
+  --color-warning: #ed8936;
+  --color-warning-light: #fbb98a;
+  --color-warning-bg: #feebc8;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 50px;
+  
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  
+  /* Typography */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}

@@ -1,0 +1,112 @@
+/* LoanForm.css - Loan form component styles */
+.loan-form {
+  background: var(--bg-card);
+  backdrop-filter: blur(10px);
+  padding: var(--space-2xl);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid var(--bg-overlay);
+}
+
+.loan-form h2 {
+  color: var(--text-primary);
+  font-size: var(--font-size-3xl);
+  font-weight: 600;
+  margin-bottom: var(--space-xl);
+  text-align: center;
+  border-bottom: 2px solid var(--color-primary-light);
+  padding-bottom: var(--space-md);
+}
+
+.form-group {
+  margin-bottom: var(--space-xl);
+}
+
+.form-row {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.form-row .form-group {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.submit-button {
+  width: 100%;
+  background: var(--bg-gradient-accent);
+  background-size: 200% 200%;
+  background-position: left center;
+  color: var(--text-white);
+  border: none;
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-normal);
+  margin-top: var(--space-xl);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: var(--shadow-md);
+}
+
+.submit-button:hover {
+  background: var(--bg-gradient-accent);
+  background-size: 200% 200%;
+  background-position: right center;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+.form-section {
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  background: var(--bg-overlay);
+  backdrop-filter: blur(5px);
+}
+
+.form-section-title {
+  color: var(--text-primary);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+  border-bottom: 1px solid var(--border-medium);
+  padding-bottom: var(--space-sm);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .loan-form {
+    padding: var(--space-lg);
+    margin: var(--space-md);
+  }
+  
+  .loan-form h2 {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .form-row .form-group {
+    margin-bottom: var(--space-lg);
+  }
+  
+  .submit-button {
+    padding: var(--space-sm) var(--space-md);
+    font-size: var(--font-size-base);
+  }
+}

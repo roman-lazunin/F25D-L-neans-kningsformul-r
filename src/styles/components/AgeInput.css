@@ -1,0 +1,89 @@
+/* AgeInput.css - Age input component styles */
+.age-input {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.age-input label {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.age-input input {
+  padding: 12px 16px;
+  border: 2px solid var(--border-light);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+  transition: var(--transition-normal);
+  background: var(--bg-white);
+  outline: none;
+  max-width: 120px;
+}
+
+.age-input input:focus {
+  border-color: var(--color-primary-light);
+  box-shadow: 0 0 0 3px rgba(156, 136, 255, 0.1);
+}
+
+.age-input input:hover {
+  border-color: var(--border-medium);
+}
+
+.age-input input:invalid {
+  border-color: #e74c3c;
+}
+
+.age-input input:invalid:focus {
+  border-color: #e74c3c;
+  box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+/* Error states */
+.age-input input.error {
+  border-color: #e74c3c;
+  box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+.age-input .error-message {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.age-input input::-webkit-outer-spin-button,
+.age-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.age-input input[type=number] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.age-input .input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.age-input .input-suffix {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #7f8c8d;
+  pointer-events: none;
+  font-size: 0.9rem;
+}
+
+.age-input .helper-text {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  margin-top: 0.25rem;
+}

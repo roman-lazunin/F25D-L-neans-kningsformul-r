@@ -1,0 +1,19 @@
+/* App.css - Main application styles */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.loan-apply-page {
+  width: 100%;
+  max-width: 800px;
+}

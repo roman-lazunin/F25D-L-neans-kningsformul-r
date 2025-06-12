@@ -1,0 +1,98 @@
+/* EmployedCheckbox.css - Employed checkbox compo.employed-checkbox input[type="checkbox"]:checked {
+  background: var(--color-accent-mint);
+  border-color: var(--color-accent-mint);
+}
+
+.employed-checkbox input[type="checkbox"]:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-white);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.employed-checkbox input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(104, 211, 145, 0.2);
+}oyed-checkbox {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background: var(--bg-light);
+  border: 2px solid var(--border-light);
+  border-radius: var(--radius-md);
+  transition: var(--transition-normal);
+  cursor: pointer;
+  user-select: none;
+}
+
+.employed-checkbox:hover {
+  border-color: var(--border-medium);
+  background: var(--bg-soft);
+}
+
+.employed-checkbox.checked {
+  border-color: var(--color-accent-mint);
+  background: var(--color-success-bg);
+}
+
+.employed-checkbox label {
+  color: #34495e;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0;
+  flex: 1;
+}
+
+.employed-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #bdc3c7;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  transition: all 0.3s ease;
+}
+
+.employed-checkbox input[type="checkbox"]:checked {
+  background: #27ae60;
+  border-color: #27ae60;
+}
+
+.employed-checkbox input[type="checkbox"]:checked::after {
+  content: '\2713';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.employed-checkbox input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.2);
+}
+
+.employed-checkbox .checkbox-label-text {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.employed-checkbox .checkbox-description {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  margin-top: 0.25rem;
+}
