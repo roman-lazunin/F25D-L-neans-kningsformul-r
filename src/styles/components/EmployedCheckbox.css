@@ -1,31 +1,20 @@
-/* EmployedCheckbox.css - Employed checkbox compo.employed-checkbox input[type="checkbox"]:checked {
-  background: var(--color-accent-mint);
-  border-color: var(--color-accent-mint);
+/* Reset checkbox styling */
+input[type="checkbox"] {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.employed-checkbox input[type="checkbox"]:checked::after {
-  content: '✓';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--text-white);
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.employed-checkbox input[type="checkbox"]:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(104, 211, 145, 0.2);
-}oyed-checkbox {
+/* Styling for the employed checkbox component */
+.employed-checkbox {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
   padding: var(--space-md);
-  background: var(--bg-light);
-  border: 2px solid var(--border-light);
-  border-radius: var(--radius-md);
-  transition: var(--transition-normal);
+  background: var(--bg-light, #f8f9fa);
+  border: 2px solid var(--border-light, #e2e8f0);
+  border-radius: var(--radius-md, 6px);
+  transition: var(--transition-normal, all 0.3s ease);
   cursor: pointer;
   user-select: none;
 }
@@ -42,7 +31,7 @@
 
 .employed-checkbox label {
   color: #34495e;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1rem;
   cursor: pointer;
   display: flex;
@@ -50,6 +39,7 @@
   gap: 0.75rem;
   margin: 0;
   flex: 1;
+  width: 100%; /* Ensure label takes full width */
 }
 
 .employed-checkbox input[type="checkbox"] {
@@ -62,28 +52,33 @@
   position: relative;
   appearance: none;
   -webkit-appearance: none;
+  -moz-appearance: none;
   transition: all 0.3s ease;
+  margin-right: 8px; /* Add some space between checkbox and text */
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0; /* Prevent checkbox from shrinking */
 }
 
 .employed-checkbox input[type="checkbox"]:checked {
-  background: #27ae60;
-  border-color: #27ae60;
+  background: var(--color-accent-mint, #27ae60);
+  border-color: var(--color-accent-mint, #27ae60);
 }
 
 .employed-checkbox input[type="checkbox"]:checked::after {
-  content: '\2713';
+  content: '✓';
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: var(--text-white, white);
   font-size: 14px;
   font-weight: bold;
 }
 
 .employed-checkbox input[type="checkbox"]:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.2);
+  box-shadow: 0 0 0 3px rgba(104, 211, 145, 0.2);
 }
 
 .employed-checkbox .checkbox-label-text {
@@ -95,4 +90,19 @@
   font-size: 0.85rem;
   color: #7f8c8d;
   margin-top: 0.25rem;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .employed-checkbox {
+    padding: var(--space-sm);
+  }
+  
+  .employed-checkbox label {
+    font-size: 0.95rem;
+  }
+  
+  .employed-checkbox .checkbox-description {
+    font-size: 0.8rem;
+  }
 }

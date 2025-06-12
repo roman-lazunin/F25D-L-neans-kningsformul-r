@@ -89,7 +89,9 @@
 @media (max-width: 768px) {
   .loan-form {
     padding: var(--space-lg);
-    margin: var(--space-md);
+    margin: var(--space-md) auto;
+    max-width: calc(100% - 2 * var(--space-md));
+    box-sizing: border-box;
   }
   
   .loan-form h2 {
@@ -103,6 +105,10 @@
   
   .form-row .form-group {
     margin-bottom: var(--space-lg);
+  }
+  
+  .form-section {
+    padding: var(--space-md);
   }
   
   .submit-button {
